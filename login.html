@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="author" content="" />
+
+    <title>會員登入</title>
+
+    <!-- Icon fonts -->
+    <link
+      href="/public/fonts/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="/public/css/fino/style_save.css?0.70702800 1622563933"
+    />
+
+    <meta property="fb:app_id" content="125547151444871" />
+
+    <meta property="og:title" content="會員登入" />
+
+    <meta property="og:url" content="https://www.fino.one" />
+
+    <meta
+      name="google-site-verification"
+      content="HKpRAv3uLtg-usNa_-TNXK5WeW2WrdnrvIF8U1sDR5k"
+    />
+    <link
+      rel="stylesheet"
+      href="/public/css/owl.carousel.css?0.70703700 1622563933"
+    />
+    <link
+      href="https://fino-david-backup.s3-ap-northeast-1.amazonaws.com/p/img_pool/3TI4hI_btn_browser.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fino-david-backup.s3-ap-northeast-1.amazonaws.com/p/img_pool/3TI4hI_btn_browser.png"
+      rel="apple-touch-icon"
+    />
+    <script src="/public/js/jquery.min.js"></script>
+    <script src="/public/js/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+
+    <script src="/public/js/index2.js"></script>
+
+    <!-- <link rel="stylesheet" href="/public/css/style2.css"> -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NTDZ28G");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NTDZ28G"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <div id="fb-root"></div>
+
+    <div class="header-sm-con"></div>
+    <div class="top-banner"></div>
+
+    <header class="header clb">
+      <div class="container">
+        <h1>
+          <a href="/"
+            ><img
+              src="https://fino-david-backup.s3-ap-northeast-1.amazonaws.com/p/img_pool/F2-nhB_fino-logo.png"
+          /></a>
+          <span>Fino網紅平台</span>
+        </h1>
+
+        <nav id="site-navi">
+          <ul class="site-navi-list">
+            <li class="navi">
+              <a href="/providers/new1?page=1&sort=fino">網紅搜尋</a>
+            </li>
+            <li class="navi">
+              <a href="/business/project">活動管理</a>
+            </li>
+            <!-- <li class="navi">
+                                <a href="">網紅管理</a>
+                            </li> -->
+            <li class="navi">
+              <a href="/providers/overview">成效分析</a>
+            </li>
+
+            <!-- 訊息通知 -->
+
+            <!-- 小鈴鐺 -->
+            <li class="navi">
+              <a class="ibtn">
+                <img
+                  src="https://fino-david-backup.s3-ap-northeast-1.amazonaws.com/p/img_pool/FaaejN_ic_alert.png"
+                  style="width: 20px; height: 20px"
+                />
+              </a>
+            </li>
+
+            <!-- information -->
+            <li class="navi">
+              <a class="ibtn">
+                <img
+                  src="https://fino-david-backup.s3-ap-northeast-1.amazonaws.com/p/img_pool/rcroLt_ic_help.png"
+                  style="width: 20px; height: 20px"
+                />
+              </a>
+            </li>
+          </ul>
+
+          <div class="user-console">
+            <!-- <div class="search-console">
+				      		<form action="/search" id="search">
+				        		<div class="input-group">
+		              				<input id="keyword" type="text" placeholder="搜尋" autocomplete="off" name="keyword">
+		              				<button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+				        		</div>
+				      		</form>
+				    	</div> -->
+          </div>
+
+          <ul class="site-navi-list">
+            <li class="navi">
+              <a id="kol-join">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                登入／註冊
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- <ul class="user-panel">
+                    <li class="navi">
+                        <a class="ibtn">
+                            <img src="https://fino-david-backup.s3-ap-northeast-1.amazonaws.com/p/img_pool/FaaejN_ic_alert.png">
+                        </a>
+                    </li>
+                    <li class="navi">
+                        <a class="ibtn">
+                            <img src="https://fino-david-backup.s3-ap-northeast-1.amazonaws.com/p/img_pool/rcroLt_ic_help.png">
+                        </a>
+                    </li>
+                    <li class="navi">
+                        <div id="user-menu">
+                            <a class="u-p-c">
+                                <div class="photo bg"
+                                    style="background-image: url('https://fino-david-backup.s3-ap-northeast-1.amazonaws.com/p/img_pool/ZRU5Us_kolimage.png');">
+                                    &nbsp;<img
+                                        src="https://fino-david-backup.s3-ap-northeast-1.amazonaws.com/p/img_pool/ZRU5Us_kolimage.png">
+                                </div>
+                                <img class="idc"
+                                    src="https://fino-david-backup.s3-ap-northeast-1.amazonaws.com/p/img_pool/rcroLt_ic_help.png">
+                            </a>
+
+                            <div class="drop-down-menu tooltip-top-right panel">
+                                <a class="hover-item" href="">
+                                    <div>會員專區</div>
+                                </a>
+                                <a href="/auth/logout" class="hover-item">
+                                    <div>登出</div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul> -->
+      </div>
+      <div class="line"></div>
+    </header>
+
+    <!-- Loading -->
+    <div id="preloader">
+      <div class="spinner">
+        <div class="rect1">L</div>
+        <div class="rect2">o</div>
+        <div class="rect3">a</div>
+        <div class="rect4">d</div>
+        <div class="rect5">ing</div>
+      </div>
+    </div>
+
+    <div class="bg-cover login-pop">
+      <div class="bg-cover-table">
+        <div class="bg-cover-cell">
+          <div class="bg-cover-content">
+            <div class="bcc-head">
+              <div href="#" class="bcc-close-btn">
+                <i class="fa fa-remove"></i>
+              </div>
+            </div>
+            <div class="bcc-content">
+              <p></p>
+              <hr />
+              <div class="clb">
+                <a href="/auth/login" class="btn"> 登入 </a>
+                <a href="/auth/register" class="btn"> 註冊 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var base_url = "/";
+      $(document).ready(function () {
+        $("#preloader").fadeOut();
+      });
+    </script>
+    <div class="bg-cover forget-pwd-pop">
+      <div class="bg-cover-table">
+        <div class="bg-cover-cell">
+          <div class="bg-cover-content">
+            <div class="bcc-head">忘記密碼中心</div>
+            <div class="bcc-content">
+              <form
+                accept-charset="UTF-8"
+                action="/auth/forgot_password"
+                class="forgot-password-email"
+                method="post"
+              >
+                <div style="margin: 0; padding: 0; display: inline">
+                  <input name="utf8" type="hidden" value="✓" />
+                  <input name="authenticity_token" type="hidden" value="" />
+                </div>
+                <p>
+                  請輸入您的電子信箱，我們會透過電子郵件向您寄送新的密碼，在收到後請盡快更改密碼。
+                </p>
+                <div class="input-contain">
+                  <input
+                    class="for-email"
+                    id="email"
+                    name="email"
+                    placeholder="請輸入電子信箱"
+                    type="email"
+                  />
+                </div>
+                <hr />
+                <div class="clb">
+                  <a type="submit" class="btn btn-forget-pwd"> 發送重設連結 </a>
+                  <img class="loading-gif" src="/public/img/loading.gif" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="bus-login-sec">
+      <div class="container">
+        <div class="form-auth">
+          <form
+            accept-charset="UTF-8"
+            action="login"
+            class="login"
+            id="login"
+            method="post"
+          >
+            <div style="display: none">
+              <input name="utf8" type="hidden" value="✓" />
+              <input name="authenticity_token" type="hidden" value="" />
+            </div>
+
+            <h3>企業主登入</h3>
+
+            <div class="input-con">
+              <input
+                autofocus="autofocus"
+                class="big_field"
+                id="user_email"
+                name="email"
+                placeholder="請輸入電子信箱"
+                required="required"
+                type="email"
+                value=""
+              />
+            </div>
+
+            <div class="input-con">
+              <input
+                class="big_field"
+                id="user_password"
+                name="password"
+                placeholder="請輸入密碼"
+                type="password"
+                value=""
+              />
+            </div>
+
+            <div class="acc-con">
+              <label class="checkbox remember-me">
+                <input
+                  type="checkbox"
+                  name="remember_me"
+                  id="remember_me"
+                  value="true"
+                  class="remember_me"
+                />
+                <span>記住我</span>
+              </label>
+              <a
+                href="/forgot_password"
+                class="forgot-password pull-right"
+                data-from="email"
+                >忘記密碼？</a
+              >
+            </div>
+
+            <div class="input-con">
+              <input
+                class="btn btn-shadow btn-big"
+                name="commit"
+                type="submit"
+                value="登入"
+              />
+            </div>
+
+            <!-- <div class="divide"><span>註冊</span></div>
+
+				<a class="btn btn-big" href="/business/register">
+					使用信箱註冊
+				</a> -->
+          </form>
+
+          <!-- 
+				<div class="log-con mgt-20">
+					<span class="or-hr">還沒有帳號?</span>
+					<a href="/auth/register">快快註冊喔 »</a>
+				</div>
+			-->
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      $(".login .input-con input").focus(function () {
+        $(this).prev().hide();
+      });
+
+      logInWithFacebook = function () {
+        FB.login(
+          function (response) {
+            if (response.authResponse) {
+              $.ajax({
+                type: "POST",
+                url: "login_with_fb",
+                data: { access_token: response.authResponse.accessToken },
+              })
+                .done(function (json_data) {
+                  if (json_data.result == "success") {
+                    if (json_data.msg == "home") window.top.location = base_url;
+                    else window.top.location = base_url + "user/profile_edit";
+                  } else {
+                    alert("發生錯誤，請檢查網路或重新載入網頁");
+                  }
+                })
+                .fail(function () {
+                  alert("發生錯誤，請檢查網路或重新載入網頁");
+                })
+                .always(function () {
+                  send_c_loading = false;
+                  $(".loading-gif").hide();
+                });
+            } else {
+              //alert('註冊會員不成功，請重新嘗試喔 !');
+            }
+          },
+          {
+            scope: "public_profile, email",
+            auth_type: "rerequest",
+            return_scopes: true,
+          }
+        );
+        return false;
+      };
+
+      $(".forgot-password").click(function () {
+        $(".forget-pwd-pop").fadeIn();
+        return false;
+      });
+
+      var send_c_loading = false;
+      $(".btn-forget-pwd").click(function () {
+        if (send_c_loading) return;
+        send_c_loading = true;
+        $(".loading-gif").show();
+
+        var email = $(".forgot-password-email .for-email").val();
+
+        $.ajax({
+          type: "POST",
+          url: "forget_pwd",
+          data: { email: email },
+        })
+          .done(function (json_data) {
+            if (json_data.result == "success") {
+              alert("新的密碼已寄到您的信箱!");
+              $(".forget-pwd-pop").fadeOut();
+            } else {
+              if (json_data.msg == "no_email") {
+                alert("請輸入電子信箱");
+              } else if (json_data.msg == "mail_invalid") {
+                alert("信箱格式錯誤。");
+              } else if (json_data.msg == "mail_repeat") {
+                alert("信箱已經註冊過了。");
+              } else {
+                alert("發生錯誤，請檢查網路或重新載入網頁");
+              }
+            }
+          })
+          .fail(function () {
+            alert("發生錯誤，請檢查網路或重新載入網頁");
+          })
+          .always(function () {
+            send_c_loading = false;
+            $(".loading-gif").hide();
+          });
+      });
+
+      function statusChangeCallback(response) {
+        if (response.status === "connected") {
+          console.log(response);
+        } else if (response.status === "not_authorized") {
+          FB.login(
+            function (response) {
+              if (response.authResponse) {
+                $.ajax({
+                  type: "POST",
+                  url: "login_with_fb",
+                  data: { access_token: response.authResponse.accessToken },
+                })
+                  .done(function (json_data) {
+                    if (json_data.result == "success") {
+                      if (json_data.msg == "home") window.top.location = "/";
+                      else window.top.location = "/user/profile_edit";
+                    } else {
+                      alert("發生錯誤，請檢查網路或重新載入網頁");
+                    }
+                  })
+                  .fail(function () {
+                    alert("發生錯誤，請檢查網路或重新載入網頁");
+                  })
+                  .always(function () {
+                    send_c_loading = false;
+                    $(".loading-gif").hide();
+                  });
+              } else {
+                alert("註冊會員不成功，請重新嘗試喔 !");
+              }
+            },
+            {
+              scope: "public_profile, email",
+              auth_type: "rerequest",
+              return_scopes: true,
+            }
+          );
+        } else {
+          FB.login(
+            function (response) {
+              if (response.authResponse) {
+                $.ajax({
+                  type: "POST",
+                  url: "login_with_fb",
+                  data: { access_token: response.authResponse.accessToken },
+                })
+                  .done(function (json_data) {
+                    if (json_data.result == "success") {
+                      if (json_data.msg == "home") window.top.location = "/";
+                      else window.top.location = "/user/profile_edit";
+                    } else {
+                      alert("發生錯誤，請檢查網路或重新載入網頁");
+                    }
+                  })
+                  .fail(function () {
+                    alert("發生錯誤，請檢查網路或重新載入網頁");
+                  })
+                  .always(function () {
+                    send_c_loading = false;
+                    $(".loading-gif").hide();
+                  });
+              } else {
+                alert("註冊會員不成功，請重新嘗試喔 !");
+              }
+            },
+            {
+              scope: "public_profile, email",
+              auth_type: "rerequest",
+              return_scopes: true,
+            }
+          );
+        }
+      }
+    </script>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="footer clb">
+        <p class="contact">聯繫我們：hello@fino.one</p>
+        <ul class="menu">
+          <li><a href="/terms/privacy_policy">隱私權政策</a></li>
+        </ul>
+        <p class="copyright">
+          ©2019 FiNO All Rights Reserved. Powered by
+          <a class="copyright-link" href="https://www.dymain.com">Dymain</a>
+        </p>
+      </div>
+
+      <!-- <a href="#page-top" id="scroll-top" class="back-to-top"><i class="fa fa-angle-up"></i></a> -->
+    </footer>
+    <div></div>
+    <div id="show-dialog-con"></div>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css"
+    />
+
+    <script src="/public/js/localize.js?0.70714200 1622563933"></script>
+    <!-- <script src="/public/js/bootstrap.min.js"></script>  -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+    <script src="/public/js/index.js?0.70714600 1622563933"></script>
+  </body>
+</html>
